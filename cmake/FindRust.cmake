@@ -854,8 +854,8 @@ if(NOT DEFINED CACHE{Rust_CARGO_TARGET_LINK_NATIVE_LIBS})
     # for the target and once for the host target (if cross-compiling).
     set(Rust_CARGO_TARGET_LINK_NATIVE_LIBS "${required_native_libs}" CACHE INTERNAL
             "Required native libraries when linking Rust static libraries")
-    set(Rust_CARGO_TARGET_LINK_OPTIONS "${required_link_flags}" CACHE INTERNAL
-            "Required link flags when linking Rust static libraries")
+    #set(Rust_CARGO_TARGET_LINK_OPTIONS "${required_link_flags}" CACHE INTERNAL
+    #        "Required link flags when linking Rust static libraries")
 endif()
 
 if(Rust_CROSSCOMPILING AND NOT DEFINED CACHE{Rust_CARGO_HOST_TARGET_LINK_NATIVE_LIBS})
